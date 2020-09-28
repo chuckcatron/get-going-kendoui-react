@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "@progress/kendo-theme-material/dist/all.css";
+import { DatePicker } from "@progress/kendo-dateinputs-react-wrapper";
+
+import "@progress/kendo-ui";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> What date would you like? </h1>
+      <DatePicker
+        value="pick a date"
+        min={new Date(2017, 1, 1)}
+        max={new Date()}
+        format={"yyyy/MM/dd"}
+      />
     </div>
   );
 }

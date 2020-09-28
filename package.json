@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@progress/kendo-dateinputs-react-wrapper": "^2019.4.1014",
+    "@progress/kendo-theme-material": "^3.19.2",
+    "@progress/kendo-ui": "^2020.3.915",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
